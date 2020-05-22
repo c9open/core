@@ -141,7 +141,7 @@ define(function(require, exports, module) {
                 if (question.dontAsk)
                     settings.set("project/codeintel/@dismiss_installer", true);
                 // Open guide in a new window (it's blocked from opening in an iframe)
-                window.open("https://github.com/c9/c9.ide.language.codeintel/blob/master/README.md", "_blank");
+                window.open("https://github.com/c9open/c9.ide.language.codeintel/blob/master/README.md", "_blank");
             }
             
             function onNo() {

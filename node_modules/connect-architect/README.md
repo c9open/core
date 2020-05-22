@@ -1,7 +1,7 @@
 connect-architect
 =================
 
-[Connect](https://github.com/senchalabs/connect) for [architect](https://github.com/c9/connect-architect).
+[Connect](https://github.com/senchalabs/connect) for [architect](https://github.com/c9open/connect-architect).
 
 
 Demo

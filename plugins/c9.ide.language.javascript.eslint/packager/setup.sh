@@ -4,7 +4,7 @@ set -euo pipefail
 cd `dirname $0`
 npm i
 if ! [ -d acorn/.git ]; then
-    git clone https://github.com/c9/acorn
+    git clone https://github.com/c9open/acorn
 fi
 pushd acorn
 git fetch origin

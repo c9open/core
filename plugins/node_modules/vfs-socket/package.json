@@ -8,7 +8,7 @@
     "version": "0.3.13",
     "repository": {
         "type": "git",
-        "url": "git://github.com/c9/vfs-socket.git"
+        "url": "git://github.com/c9open/vfs-socket.git"
     },
     "dependencies": {
         "smith": "~0.1.17"
@@ -25,7 +25,7 @@
     },
     "licenses" : [{
         "type" : "MIT",
-        "url" : "http://github.com/c9/vfs-socket/raw/master/LICENSE"
+        "url" : "http://github.com/c9open/vfs-socket/raw/master/LICENSE"
     }],
     "engines": {
         "node": "*"

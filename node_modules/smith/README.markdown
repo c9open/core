@@ -67,7 +67,7 @@ var socket = net.connect(1337, function () {
 ```
 
 For an example of how to reconnect if the connection goes down, see
-https://github.com/c9/smith/blob/master/samples/tcp-client-autoreconnect.js
+https://github.com/c9open/smith/blob/master/samples/tcp-client-autoreconnect.js
 
 ### STDIO Parent-Child Example
 

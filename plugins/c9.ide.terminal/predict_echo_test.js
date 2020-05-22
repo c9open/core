@@ -295,7 +295,7 @@ require(["lib/architect/architect", "lib/chai/chai", "/vfs-root", "ace/test/asse
                     sendAll(["e", "h"]);
                 });
                 
-                // Fails on CI server (https://github.com/c9/newclient/issues/9550)
+                // Fails on CI server (https://github.com/c9open/newclient/issues/9550)
                 it.skip("supports delete with repeated characters; stress test", function loop(done, attempt) {
                     this.timeout && this.timeout(60000);
                     session.$predictor.state = 0;

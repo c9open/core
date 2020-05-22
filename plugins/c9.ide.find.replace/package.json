@@ -6,7 +6,7 @@
     "contributors": [],
     "repository": {
         "type": "git",
-        "url": "http://github.com/c9/c9.ide.find.replace.git"
+        "url": "http://github.com/c9open/c9.ide.find.replace.git"
     },
     "plugins": {
         "findreplace": {}

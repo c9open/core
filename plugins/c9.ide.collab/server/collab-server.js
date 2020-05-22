@@ -1954,7 +1954,7 @@ function syncDocument(docId, doc, client, forceSync, callback) {
             if (doc && typeof doc.contents != "string" && doc.contents)
                 doc.contents = doc.contents.toString(); // because it can be a buffer
             
-            // HACK: fsHash from database is unreliable (https://github.com/c9/newclient/issues/3980)
+            // HACK: fsHash from database is unreliable (https://github.com/c9open/newclient/issues/3980)
             if (doc)
                 doc.fsHash = hashString(doc.contents);
             

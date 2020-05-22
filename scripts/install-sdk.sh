@@ -73,7 +73,7 @@ updateCore() {
     cp './scripts/.#install-sdk-tmp.sh' ./scripts/install-sdk.sh
     git checkout -- ./scripts/install-sdk.sh
 
-    git remote add c9 https://github.com/c9/core 2> /dev/null || true
+    git remote add c9 https://github.com/c9open/core 2> /dev/null || true
     git fetch c9
     git merge c9/master --ff-only || \
         echo "${yellow}Couldn't automatically update sdk core ${resetColor}"
@@ -84,9 +84,9 @@ updateCore() {
 installGlobalDeps() {
     if ! [[ -f ~/.c9/installed ]]; then
         if [[ $os == "windows" ]]; then
-            URL=https://raw.githubusercontent.com/cloud9ide/sdk-deps-win32
+            URL=https://raw.githubusercontent.com/cloud9ideopen/sdk-deps-win32
         else
-            URL=https://raw.githubusercontent.com/c9/install
+            URL=https://raw.githubusercontent.com/c9open/install
         fi    
         $DOWNLOAD $URL/master/install.sh | bash
     fi

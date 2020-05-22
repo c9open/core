@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/c9/vfs-lint.git"
+    "url": "git://github.com/c9open/vfs-lint.git"
   },
   "author": "Tim Caswell",
   "license": "MIT"

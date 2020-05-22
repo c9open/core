@@ -32,7 +32,7 @@ for i in "$@"; do
 done
 
 if [ "$NAME" == "" ]; then
-    echo "add name [--url=git@github.com:c9/NAME.git] [--branch=master]"
+    echo "add name [--url=git@github.com:c9open/NAME.git] [--branch=master]"
     exit 0
 fi
 
@@ -40,7 +40,7 @@ update_one() {
     echo adding name=$NAME url=$URL branch=refs/remotes/origin/$BRANCH
     
     if [ "$URL" == "" ]; then
-        URL=git@github.com:c9/$NAME.git
+        URL=git@github.com:c9open/$NAME.git
     fi
     
     mkdir -p $NAME

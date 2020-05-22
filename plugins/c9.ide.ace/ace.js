@@ -2412,7 +2412,7 @@
                         if (progress >= (c9Session.progress || 0) || (c9Session.progress == 100 && !progress)) {
                             c9Session.progress = progress;
                         } else if (c9Session.progress && e.upload) {
-                            // see https://github.com/c9/newclient/issues/3682
+                            // see https://github.com/c9open/newclient/issues/3682
                             // disabled warning for download since this happens very often with collab, 
                             // because socket is not able to keep up with the load
                             // todo reenable when collab issue is fixed

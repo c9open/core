@@ -93,7 +93,7 @@ var deps = {
     jshint: {
         path: "mode/javascript/jshint.js",
         browserify: {
-            npmModule: "git+https://github.com/ajaxorg/jshint.git#master",
+            npmModule: "git+https://github.com/ajaxorgopen/jshint.git#master",
             path: "jshint/src/jshint.js",
             exports: "jshint"
         },

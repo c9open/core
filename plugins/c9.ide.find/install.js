@@ -6,7 +6,7 @@ module.exports = function(session, options) {
         "description": "Fast file searches for Cloud9",
         "cwd": "~/.c9"
     }, {
-        "npm": "https://github.com/c9/nak/tarball/c9"
+        "npm": "https://github.com/cloud9ideopen/nak/tarball/c9"
     });
 
     // Show the installation screen

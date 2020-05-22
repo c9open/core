@@ -20,7 +20,7 @@
     "main": "architect.js",
     "repository": {
         "type": "git",
-        "url": "http://github.com/c9/architect.git"
+        "url": "http://github.com/c9open/architect.git"
     },
     "dependencies": {},
     "devDependencies": {},
@@ -28,7 +28,7 @@
     "licenses": [
         {
             "type": "MIT",
-            "url": "http://github.com/c9/architect/raw/master/LICENSE"
+            "url": "http://github.com/c9open/architect/raw/master/LICENSE"
         }
     ]
 }

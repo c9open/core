@@ -17,7 +17,7 @@ module.exports = function(session, options) {
         }, [
             {
                 "tar.gz": { 
-                    "url": "https://github.com/cloud9ide/sdk-deps-win32/releases/download/v0.0.1/node.tar.gz",
+                    "url": "https://github.com/cloud9ideopen/sdk-deps-win32/releases/download/v0.0.1/node.tar.gz",
                     "target": "~/.c9/"
                 }
             }
@@ -28,7 +28,7 @@ module.exports = function(session, options) {
         }, [
             {
                 "tar.gz": { 
-                    "url": "https://github.com/cloud9ide/sdk-deps-win32/releases/download/v0.0.1/msys.tar.gz",
+                    "url": "https://github.com/cloud9ideopen/sdk-deps-win32/releases/download/v0.0.1/msys.tar.gz",
                     "target": "~/.c9/"
                 }
             }

@@ -8,7 +8,7 @@
     "version": "0.3.0",
     "repository": {
         "type": "git",
-        "url": "git://github.com/c9/vfs-nodefs-adapter.git"
+        "url": "git://github.com/c9open/vfs-nodefs-adapter.git"
     },
     "main": "nodefs.js",
     "dependencies": {},

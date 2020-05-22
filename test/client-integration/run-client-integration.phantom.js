@@ -51,7 +51,7 @@ function linkifyErrorStack(msg) {
     function toGithubUrl(path) {
         if (!branch) return path;
         return path.replace(/\/?([^:]+):(\d+)/g, function(_, path, line) {
-            return "https://github.com/c9/newclient/blob/" + branch + "/" + path + "#L" + line;
+            return "https://github.com/c9open/newclient/blob/" + branch + "/" + path + "#L" + line;
         });
     }
     // change phantomjs stack to chrome format

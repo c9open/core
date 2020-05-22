@@ -13,7 +13,7 @@ Base
 ----
 
 * [http://nodeguide.com/style.html]([http://nodeguide.com/style.html)
-* [https://github.com/ajaxorg/apf/blob/master/CODING_STANDARDS](https://github.com/ajaxorg/apf/blob/master/CODING_STANDARDS)
+* [https://github.com/ajaxorgopen/apf/blob/master/CODING_STANDARDS](https://github.com/ajaxorgopen/apf/blob/master/CODING_STANDARDS)
 
 
 Tabs vs Spaces
@@ -721,7 +721,7 @@ PR branch names, e.g.
 
 Checking for branch naming consistency is part of the review process and the teams responsibility.
 
-    Use “all-” in case of doubt. E.g., https://github.com/c9/newclient/pull/12962/files affects redis schema code.
+    Use “all-” in case of doubt. E.g., https://github.com/c9open/newclient/pull/12962/files affects redis schema code.
 
 Generally, releasing changes affecting several services is a smell so this can help you identify possible issues.
 
@@ -732,5 +732,5 @@ You can now look for all PRs which made it in like so (api in this case):
 Other Resources
 ===============
 
-* [https://github.com/ajaxorg/apf/blob/master/CODING_STANDARDS](https://github.com/ajaxorg/apf/blob/master/CODING_STANDARDS)
+* [https://github.com/ajaxorgopen/apf/blob/master/CODING_STANDARDS](https://github.com/ajaxorgopen/apf/blob/master/CODING_STANDARDS)
 * [http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)

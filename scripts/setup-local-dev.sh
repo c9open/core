@@ -102,7 +102,7 @@ if [ "$os" == "windows" ]; then
     if [ ! -f "$HOME/.c9/"node.exe ] || [ ! -d "$HOME/.c9/"msys ]; then
         echo "downloading node"
         pushd "$HOME/.c9/"
-        curl -L https://raw.githubusercontent.com/cloud9ide/sdk-deps-win32/master/install.sh | bash
+        curl -L https://raw.githubusercontent.com/cloud9ideopen/sdk-deps-win32/master/install.sh | bash
         # bash $SOURCE/../sdk-deps-win32/install.sh # for testing
         popd
     fi

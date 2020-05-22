@@ -1,7 +1,7 @@
  /*
   * Copyright (C) 2015,  Ajax.org B.V.
   * This software is available under the Cloud9 SDK License, available from 
-  * https://github.com/c9/core/blob/master/LICENSE.
+  * https://github.com/c9open/core/blob/master/LICENSE.
   */
 
 var net = require("net");

@@ -12,7 +12,7 @@
     "main": "build.js",
     "repository": {
         "type": "git",
-        "url": "http://github.com/c9/architect-build.git"
+        "url": "http://github.com/c9open/architect-build.git"
     },
     "dependencies": {
         "through": "2.2.0",
@@ -26,7 +26,7 @@
     "licenses": [
         {
             "type": "MIT",
-            "url": "http://github.com/c9/architect-build/raw/master/LICENSE"
+            "url": "http://github.com/c9open/architect-build/raw/master/LICENSE"
         }
     ]
 }

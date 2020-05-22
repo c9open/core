@@ -8,7 +8,7 @@
   ],
   "repository" : {
     "type" : "git",
-    "url" : "http://github.com/ajaxorg/node-amd-loader.git" 
+    "url" : "http://github.com/ajaxorgopen/node-amd-loader.git" 
   },
   "main": "./amd-loader.js",
   "scripts" : {
@@ -19,6 +19,6 @@
   },
   "licenses" : [{
     "type" : "MIT",
-    "url" : "http://github.com/ajaxorg/node-amd-loader/raw/master/LICENSE"
+    "url" : "http://github.com/ajaxorgopen/node-amd-loader/raw/master/LICENSE"
   }]
 }

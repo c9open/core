@@ -37,7 +37,7 @@ If you want, you can use Ace as a textarea replacement thanks to the [Ace Bookma
 Embedding Ace
 -------------
 
-Ace can be easily embedded into any existing web page. You can either use one of pre-packaged versions of [ace](https://github.com/ajaxorg/ace-builds/) (just copy one of `src*` subdirectories somewhere into your project), or use requireJS to load contents of [lib/ace](https://github.com/ajaxorg/ace/tree/master/lib/ace) as `ace`
+Ace can be easily embedded into any existing web page. You can either use one of pre-packaged versions of [ace](https://github.com/ajaxorgopen/ace-builds/) (just copy one of `src*` subdirectories somewhere into your project), or use requireJS to load contents of [lib/ace](https://github.com/ajaxorgopen/ace/tree/master/lib/ace) as `ace`
 
 
 The easiest version is simply:
@@ -100,7 +100,7 @@ Additional usage information, including events to listen to and extending syntax
 
 You can also find API documentation at [http://ace.c9.io/#nav=api](http://ace.c9.io/#nav=api).
 
-Also check out the sample code for the kitchen sink [demo app](https://github.com/ajaxorg/ace/blob/master/demo/kitchen-sink/demo.js).
+Also check out the sample code for the kitchen sink [demo app](https://github.com/ajaxorgopen/ace/blob/master/demo/kitchen-sink/demo.js).
 
 If you still need help, feel free to drop a mail on the [ace mailing list](http://groups.google.com/group/ace-discuss), or at `irc.freenode.net#ace`.
 
@@ -115,12 +115,12 @@ node ./static.js
 
 The editor can then be opened at http://localhost:8888/kitchen-sink.html. 
 
-To open the editor with a file:/// URL see [the wiki](https://github.com/ajaxorg/ace/wiki/Running-Ace-from-file).
+To open the editor with a file:/// URL see [the wiki](https://github.com/ajaxorgopen/ace/wiki/Running-Ace-from-file).
 
 Building Ace
 -----------
 
-You do not generally need to build ACE. The [ace-builds repository](https://github.com/ajaxorg/ace-builds/) endeavours to maintain the latest build, and you can just copy one of _src*_ subdirectories somewhere into your project.
+You do not generally need to build ACE. The [ace-builds repository](https://github.com/ajaxorgopen/ace-builds/) endeavours to maintain the latest build, and you can just copy one of _src*_ subdirectories somewhere into your project.
 
 However, all you need is Node.js and npm installed to package ACE. Just run `npm install` in the ace folder to install dependencies:
 
@@ -160,5 +160,5 @@ Contributing
 
 Ace is a community project and wouldn't be what it is without contributions! We actively encourage and support contributions. The Ace source code is released under the BSD License. This license is very simple, and is friendly to all kinds of projects, whether open source or not. Take charge of your editor and add your favorite language highlighting and keybindings!
 
-Feel free to fork and improve/enhance Ace any way you want. If you feel that the editor or the Ace community will benefit from your changes, please open a pull request. For more information on our contributing guidelines, see [CONTRIBUTING.md](https://github.com/ajaxorg/ace/blob/master/CONTRIBUTING.md).
+Feel free to fork and improve/enhance Ace any way you want. If you feel that the editor or the Ace community will benefit from your changes, please open a pull request. For more information on our contributing guidelines, see [CONTRIBUTING.md](https://github.com/ajaxorgopen/ace/blob/master/CONTRIBUTING.md).
 

@@ -15,12 +15,12 @@
     "licenses": [
         {
             "type": "MIT",
-            "url": "http://github.com/c9/smith/raw/master/LICENSE"
+            "url": "http://github.com/c9open/smith/raw/master/LICENSE"
         }
     ],
     "repository": {
         "type": "git",
-        "url": "git://github.com/c9/smith.git"
+        "url": "git://github.com/c9open/smith.git"
     },
     "main": "smith.js",
     "engines": {
