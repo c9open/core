@@ -29,10 +29,12 @@ module.exports = function(config, optimist) {
             .boolean("packed")
             .default("packed", config.packed)
             .alias("a", "auth")
+            .alias("f", "afile")
             .boolean("hosted")
             .describe("hosted", "Use default config of the hosted version")
             .default("hosted", false)
             .describe("auth", "Basic Auth username:password")
+            .describe("afile", "Basic Auth credentials file. Each line format: id|login|password|email|Full Name")
             .describe("collab", "Whether to enable collab.")
             .default("collab", config.collab)
             .describe("cache", "use cached version of cdn files")
@@ -71,6 +73,8 @@ module.exports = function(config, optimist) {
     var readonly = argv.readonly;
     var startBridge = argv.b;
     
+    var afile = argv.afile;
+
     config.port = port || argv.port;
     config.host = host || argv.listen;
     
@@ -98,7 +102,7 @@ module.exports = function(config, optimist) {
         require("child_process").exec("tmux -L cloud91.9 kill-server", function() {});
 
     var isLocalhost = host == "localhost" || host == "127.0.0.1";
-    if (!/:/.test(argv.auth) && !isLocalhost) {
+    if (!/:/.test(argv.auth) && !isLocalhost && !afile) {
         console.log("Authentication is required when not running on localhost.");
         console.log("If you would like to expose this service to other hosts or the Internet");
         console.log("at large, please specify -a user:pass to set a username and password");
@@ -108,10 +112,19 @@ module.exports = function(config, optimist) {
         host = config.host = "127.0.0.1";
     }
     var auth = (argv.auth + "").split(":");
-    if (!auth[1] && !isLocalhost && !process.env.C9_HOSTNAME) {
+    if (!auth[1] && !isLocalhost && !process.env.C9_HOSTNAME && !afile) {
         console.log("Warning: running Cloud9 without using HTTP authentication.");
         console.log("Run using --listen localhost instead to only expose Cloud9 to localhost,");
         console.log("or use -a username:password to setup HTTP authentication\n");
+    }
+    if (afile) {
+        var fs = require('fs');
+        afile = fs.readFileSync(afile).toString().split("\n");
+        var adict = {};
+        for (var l in afile) {
+            var line = afile[l].split('|');
+            adict[line[1]] = {id: line[0], password: line[2], email: line[3], fullname: line[4]};
+        }
     }
 
     var plugins = [
@@ -126,7 +139,8 @@ module.exports = function(config, optimist) {
         {
             packagePath: "connect-architect/connect.basicauth",
             username: auth[0],
-            password: auth[1]
+            password: auth[1],
+            adict: adict
         },
         {
             packagePath: "connect-architect/connect.static",
